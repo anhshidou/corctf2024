@@ -97,7 +97,23 @@ Lúc này, mình nhớ đến có 1 task để tìm group là Group Membership v
 
 Đây là 1 số thứ có ở trong và đề bài yêu cầu phải tìm highest risk, ở đây thì mình nhận ra ngay Administrators là group có độ rủi ro về bảo mật nhất.
 
+## Kiến thức thu được
 
+Sau khi cho người anh trong CLB tham khảo bài wu này của mình, anh ý có bổ sung cho mình thêm về một số thứ có ích.
+
+**Password Policy** ví dụ như hành động thay đổi policy hay brute force, password spray với wordlist được chỉnh để né policy chẳng hạn. Sau khi xem thử trên mitre thì mình thấy rằng nó có 1 mitigation liên quan đến.
+
+https://attack.mitre.org/mitigations/M1027/
+
+Tuy nhiên thì không chỉ có mỗi **Password Policy** mà còn là cả về **Group Policy** 
+
+Để giải thích thì: ở trong group policy, kẻ tấn công sẽ có thể thu được thông tin từ Group Policy settings để xác định được đường dẫn giúp ích cho **Privileged Escalation** hay trong tiếng Việt là leo quyền, và khi đã leo quyền lên Admin thành công, thì kẻ tấn công này có thể thao túng hay là nắm quyền kiểm soát cái Group Policy này.
+
+Mitre Attack technique: T1615
+
+https://attack.mitre.org/techniques/T1615/
+
+-> Chốt lại thì theo mình đánh giá đây là 1 bài tương đối dễ và nhập môn của Endpoint Forensics, nhưng cảm ơn tác giả vì đã cho một bài mà mình đã lâu rồi mới được trải nghiệm ở 1 giải CTF 
 
 
 
